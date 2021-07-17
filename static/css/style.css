@@ -1,0 +1,138 @@
+body{
+  background: rgb(48, 117, 129);
+  justify-content: center;
+ 
+  display:flex;
+}
+
+section{
+  position: absolute;
+  top: 0%;
+  margin-top: 8%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('static/css/images/image 23.jpg');
+  display: flex;
+  justify-content: bottom;
+  padding: 2%;
+  padding-left: 35%;
+
+}
+
+.text{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  margin-top: 3%;
+  font-size: large;
+
+  margin-top: 0px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.795);
+  
+ 
+}
+h1{
+  text-shadow:  rgb(95, 77, 86) white;
+  text-align: center;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 8s steps(37) infinite alternate;
+  border-right: 3px solid black;
+}
+@keyframes text{
+  0%{
+    width: 0ch;
+
+  }
+  50%{
+     width: 37ch
+  }
+  65%{
+    width: 37ch
+  }
+}
+ 
+    
+
+
+    
+
+.autocomplete {
+  position: relative;
+  border: 1px solid green;
+  display: inline-block;
+  margin: 0%;
+  width: 100%;
+  padding : 5px
+ 
+  
+ 
+
+}
+
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 15px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active{
+  background-color: palevioletred !important; 
+  color: #ffffff; 
+
+  
+}
+
+
+#myInput{
+  width: 400px;
+}
+
+#buttons{
+  width: 100px;
+  color: #fff;
+  background-color:palevioletred;
+}

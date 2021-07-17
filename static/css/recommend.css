@@ -1,0 +1,77 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:wght@200;400;700&display=swap');
+
+
+:root{
+    -primary-color: rgb(29, 118, 129);
+   /* --primary-color: rgb(109, 104, 104); */
+}
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+    
+    
+}
+
+header{
+    
+    display:flex;
+    justify-content: flex-end;
+    
+}
+
+h1{
+    background: rgb(184, 111, 106);
+    width: 50%;
+    padding: 2%;
+    margin-right: 50%;
+    margin-left: 20%;
+    color: rgba(225, 246, 250, 0.911);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* text-decoration: underline; */
+}
+
+.list-group{
+    margin-left: 19%;
+    font-size: medium;
+    background-color: whitesmoke;
+    width: 50%;
+    padding : 4%;
+    color: rgba(0, 0, 0, 0.705);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+.list-group-item{
+    
+    font-size: x-large;
+}
+
+h3{
+    font-size: x-large;
+    margin-left: 40%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+body{
+    background:rgb(29, 118, 129);
+}
+.error  h3{
+   
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color:whitesmoke;
+    width: 50%;
+    font-size: xx-large;
+    padding: 4%;
+    margin-left: 20%;
+    color: rgba(0, 0, 0, 0.753);
+    height: 20%
+
+} 
+
+
+
+
