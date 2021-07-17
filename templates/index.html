@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendation system</title>
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+  rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/style.css') }}" >  
+   <!-- Javascript -->
+  
+   
+   
+
+</head>
+<body>
+  <div class="text">
+    <h1 style="text-align: center;">Welcome to the recommendation system.</h1>
+  </div>
+
+
+  <section class="nav">
+    <!-- action="{{url_for('recommend')}}" -->
+    
+    <form autocomplete="off", id = "movie2", action="{{url_for('recommend')}}">
+        <div class="autocomplete" >
+          <input id="myInput" type="text" name="movie" placeholder="enter movie name">
+       
+       
+        <input id = "buttons" type="submit">
+       </div>
+      </form>
+    </section>
+
+   
+
+    <script>
+      function changeBg(){
+          const images = ['url("static/css/images/image 11.jpg")', 'url("static/css/images/image 24.jpg")', 'url("static/css/images/image 23.jpg")', 'url("static/css/images/image 212.jpg")', 'url("static/css/images/image 24.jpg")']
+
+          const section = document.querySelector('section')
+          const bg = images[Math.floor(Math.random()* images.length)];
+          section.style.backgroundImage = bg;
+
+      }
+      setInterval(changeBg, 4000)
+      </script>
+
+
+
+
+
+
+
+
+    
+
+</div>
+ </div>
+  <script src="static/autocomplete.js"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='trial.js')}}"></script> 
+
+</body>
+</html>

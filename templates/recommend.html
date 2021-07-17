@@ -1,0 +1,46 @@
+
+
+ 
+ {% block content %} 
+{% if t=='l' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/recommend.css') }}">  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    
+ 
+       <h1 style="text-align: center;">"{{movie}}" is a good call !</h1>
+   
+      <br>
+      <h3>You Might also like : </h3>
+     <ul class="list-group "> 
+      {% for m in r %}
+        <li class="list-group-item" ><strong>{{m|capitalize}}</strong></li>
+      {% endfor %}
+     </ul> 
+
+     {% else %}
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/recommend.css') }}">  
+<body>
+     <div class="error">
+       <h3 >Sorry! This movie is not in our database.<br>
+        <br>
+       Please check if you spelled it correct.<br>
+       Or try with another movie.</h3>
+     </div>
+    </body>
+  
+     {% endif %}
+
+     {% endblock %}
+   
+    
